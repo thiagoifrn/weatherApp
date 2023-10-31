@@ -18,6 +18,7 @@
 		66A5FA4C2AF09F9A008DC174 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA4B2AF09F9A008DC174 /* BackgroundView.swift */; };
 		66A5FA4E2AF0A217008DC174 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA4D2AF0A217008DC174 /* HeaderView.swift */; };
 		66A5FA502AF0A524008DC174 /* TextLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA4F2AF0A524008DC174 /* TextLabels.swift */; };
+		66A5FA522AF0B4DE008DC174 /* StacksViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA512AF0B4DE008DC174 /* StacksViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		66A5FA4B2AF09F9A008DC174 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		66A5FA4D2AF0A217008DC174 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		66A5FA4F2AF0A524008DC174 /* TextLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLabels.swift; sourceTree = "<group>"; };
+		66A5FA512AF0B4DE008DC174 /* StacksViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				66A5FA4B2AF09F9A008DC174 /* BackgroundView.swift */,
 				66A5FA4D2AF0A217008DC174 /* HeaderView.swift */,
 				66A5FA4F2AF0A524008DC174 /* TextLabels.swift */,
+				66A5FA512AF0B4DE008DC174 /* StacksViews.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				66A5FA4E2AF0A217008DC174 /* HeaderView.swift in Sources */,
 				66A5FA1F2AF0880A008DC174 /* ViewController.swift in Sources */,
 				66A5FA1B2AF0880A008DC174 /* AppDelegate.swift in Sources */,
+				66A5FA522AF0B4DE008DC174 /* StacksViews.swift in Sources */,
 				66A5FA4C2AF09F9A008DC174 /* BackgroundView.swift in Sources */,
 				66A5FA1D2AF0880A008DC174 /* SceneDelegate.swift in Sources */,
 				66A5FA502AF0A524008DC174 /* TextLabels.swift in Sources */,

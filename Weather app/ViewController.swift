@@ -14,6 +14,15 @@ class ViewController: UIViewController {
     private let cityLabel = TextLabels.init().cityLabel
     private let temperatureLabel = TextLabels.init().temperatureLabel
     private let sunImageView = BackgroundView.init().sunView
+    
+    private let containerVertical = StacksViews.init().containerVertical
+    private let humidityStackView = StacksViews.init().humidityStackView
+    private let windStackView = StacksViews.init().windStackView
+    
+    private let humidityLabel = TextLabels.init().humidityLabel
+    private let humidityValueLabel = TextLabels.init().humidityValueLabel
+    private let windLabel = TextLabels.init().windLabel
+    private let windValueLabel = TextLabels.init().windValueLabel
 
     
     override func viewDidLoad() {
@@ -31,10 +40,26 @@ class ViewController: UIViewController {
     
     private func setHierarchy() {
         view.addSubview(backgroundView)
-        view.addSubview(headerView)
+        
         headerView.addSubview(cityLabel)
         headerView.addSubview(temperatureLabel)
         headerView.addSubview(sunImageView)
+        view.addSubview(headerView)
+        
+        
+        
+        
+        humidityStackView.addArrangedSubview(humidityLabel)
+        humidityStackView.addArrangedSubview(humidityValueLabel)
+        windStackView.addArrangedSubview(windLabel)
+        windStackView.addArrangedSubview(windValueLabel)
+        
+        containerVertical.addArrangedSubview(humidityStackView)
+        containerVertical.addArrangedSubview(windStackView)
+        
+        view.addSubview(containerVertical)
+        
+        
 
     }
     
@@ -65,6 +90,13 @@ class ViewController: UIViewController {
             sunImageView.widthAnchor.constraint(equalToConstant: 86),
             sunImageView.trailingAnchor.constraint(equalTo: headerView.trailingAnchor,constant: -26),
             sunImageView.centerYAnchor.constraint(equalTo: temperatureLabel.centerYAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            containerVertical.topAnchor.constraint(equalTo: headerView.bottomAnchor,constant: 24),
+            containerVertical.widthAnchor.constraint(equalToConstant: 200),
+            containerVertical.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+
         ])
         
         

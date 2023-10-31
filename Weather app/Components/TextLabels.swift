@@ -29,5 +29,41 @@ class TextLabels {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
+    lazy var humidityLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 12, weight: .semibold)
+        label.textColor = UIColor(named: "whiteColor")
+        label.text = "Umidade"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var humidityValueLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 12, weight: .semibold)
+        label.textColor = UIColor(named: "whiteColor")
+        label.text = "1000mm"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var windLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 12, weight: .semibold)
+        label.textColor = UIColor(named: "whiteColor")
+        label.text = "Vento"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var windValueLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 12, weight: .semibold)
+        label.textColor = UIColor(named: "whiteColor")
+        label.text = "10km/h"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
    
 }
