@@ -25,5 +25,13 @@ class BackgroundView {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
+    
+    lazy var cloudView: UIImageView = {
+        let imageView = UIImageView(frame: .zero)
+        imageView.image = UIImage(named: "Cloud")
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
    
 }

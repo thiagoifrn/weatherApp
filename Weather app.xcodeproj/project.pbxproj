@@ -21,6 +21,8 @@
 		66A5FA522AF0B4DE008DC174 /* StacksViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA512AF0B4DE008DC174 /* StacksViews.swift */; };
 		66A5FA542AF0C23B008DC174 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA532AF0C23B008DC174 /* CollectionView.swift */; };
 		66A5FA562AF0C540008DC174 /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA552AF0C540008DC174 /* HourlyForecastCollectionViewCell.swift */; };
+		66A5FA582AF0D564008DC174 /* DailyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA572AF0D564008DC174 /* DailyForecastTableViewCell.swift */; };
+		66A5FA5A2AF0DC46008DC174 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA592AF0DC46008DC174 /* UIView+extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		66A5FA512AF0B4DE008DC174 /* StacksViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksViews.swift; sourceTree = "<group>"; };
 		66A5FA532AF0C23B008DC174 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		66A5FA552AF0C540008DC174 /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
+		66A5FA572AF0D564008DC174 /* DailyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCell.swift; sourceTree = "<group>"; };
+		66A5FA592AF0DC46008DC174 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				66A5FA1A2AF0880A008DC174 /* AppDelegate.swift */,
 				66A5FA1C2AF0880A008DC174 /* SceneDelegate.swift */,
 				66A5FA1E2AF0880A008DC174 /* ViewController.swift */,
+				66A5FA572AF0D564008DC174 /* DailyForecastTableViewCell.swift */,
+				66A5FA592AF0DC46008DC174 /* UIView+extensions.swift */,
 				66A5FA552AF0C540008DC174 /* HourlyForecastCollectionViewCell.swift */,
 				66A5FA232AF0880B008DC174 /* Assets.xcassets */,
 				66A5FA252AF0880B008DC174 /* LaunchScreen.storyboard */,
@@ -280,12 +286,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66A5FA5A2AF0DC46008DC174 /* UIView+extensions.swift in Sources */,
 				66A5FA4E2AF0A217008DC174 /* HeaderView.swift in Sources */,
 				66A5FA1F2AF0880A008DC174 /* ViewController.swift in Sources */,
 				66A5FA1B2AF0880A008DC174 /* AppDelegate.swift in Sources */,
 				66A5FA522AF0B4DE008DC174 /* StacksViews.swift in Sources */,
 				66A5FA562AF0C540008DC174 /* HourlyForecastCollectionViewCell.swift in Sources */,
 				66A5FA4C2AF09F9A008DC174 /* BackgroundView.swift in Sources */,
+				66A5FA582AF0D564008DC174 /* DailyForecastTableViewCell.swift in Sources */,
 				66A5FA1D2AF0880A008DC174 /* SceneDelegate.swift in Sources */,
 				66A5FA542AF0C23B008DC174 /* CollectionView.swift in Sources */,
 				66A5FA502AF0A524008DC174 /* TextLabels.swift in Sources */,

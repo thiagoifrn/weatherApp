@@ -48,5 +48,15 @@ class StacksViews {
         return stackView
     }()
     
+    lazy var tableStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.spacing = 15
+        stackView.isLayoutMarginsRelativeArrangement = true
+        stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+    
    
 }

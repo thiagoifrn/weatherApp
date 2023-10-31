@@ -76,6 +76,16 @@ class TextLabels {
         return label
     }()
     
+    lazy var dailyForecastLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 18, weight: .semibold)
+        label.textColor = UIColor(named: "whiteColor")
+        label.text = "próximos dias"
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     lazy var hourLabel: UILabel = {
         let label = UILabel(frame: .zero)
         label.font = .systemFont(ofSize: 10, weight: .semibold)
@@ -92,6 +102,33 @@ class TextLabels {
         label.textColor = UIColor(named: "whiteColor")
         label.text = "24ºC"
         label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var weekDayLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 12, weight: .semibold)
+        label.textColor = UIColor(named: "whiteColor")
+        label.text = "TER"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var minTempLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 12, weight: .semibold)
+        label.textColor = UIColor(named: "whiteColor")
+        label.text = "min 18ºC"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var maxTempLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 12, weight: .semibold)
+        label.textColor = UIColor(named: "whiteColor")
+        label.text = "max 25ºC"
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
