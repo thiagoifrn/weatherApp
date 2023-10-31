@@ -65,5 +65,37 @@ class TextLabels {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
+    lazy var hourlyForecastLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 18, weight: .semibold)
+        label.textColor = UIColor(named: "whiteColor")
+        label.text = "Previsão por hora"
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var hourLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 10, weight: .semibold)
+        label.textColor = UIColor(named: "whiteColor")
+        label.text = "13:00"
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    lazy var temperatureCollectionLabel: UILabel = {
+        let label = UILabel(frame: .zero)
+        label.font = .systemFont(ofSize: 14, weight: .semibold)
+        label.textColor = UIColor(named: "whiteColor")
+        label.text = "24ºC"
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    
    
 }

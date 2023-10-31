@@ -9,6 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    lazy var hourlyCollctionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 66, height: 84)
+        layout.sectionInset = UIEdgeInsets(top: .zero, left: 10, bottom: .zero, right: 10)
+        
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.backgroundColor = .clear
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.dataSource = self
+        collectionView.register(HourlyForecastCollectionViewCell.self, forCellWithReuseIdentifier: HourlyForecastCollectionViewCell.identifier)
+        return collectionView
+    }()
+    
     private let backgroundView = BackgroundView.init().backgroundView
     private let headerView = HeaderView.init().headerView
     private let cityLabel = TextLabels.init().cityLabel
@@ -19,10 +33,12 @@ class ViewController: UIViewController {
     private let humidityStackView = StacksViews.init().humidityStackView
     private let windStackView = StacksViews.init().windStackView
     
+    
     private let humidityLabel = TextLabels.init().humidityLabel
     private let humidityValueLabel = TextLabels.init().humidityValueLabel
     private let windLabel = TextLabels.init().windLabel
     private let windValueLabel = TextLabels.init().windValueLabel
+    private let hourlyForecastLabel = TextLabels.init().hourlyForecastLabel
 
     
     override func viewDidLoad() {
@@ -46,9 +62,6 @@ class ViewController: UIViewController {
         headerView.addSubview(sunImageView)
         view.addSubview(headerView)
         
-        
-        
-        
         humidityStackView.addArrangedSubview(humidityLabel)
         humidityStackView.addArrangedSubview(humidityValueLabel)
         windStackView.addArrangedSubview(windLabel)
@@ -58,6 +71,8 @@ class ViewController: UIViewController {
         containerVertical.addArrangedSubview(windStackView)
         
         view.addSubview(containerVertical)
+        view.addSubview(hourlyForecastLabel)
+        view.addSubview(hourlyCollctionView)
         
         
 
@@ -99,8 +114,37 @@ class ViewController: UIViewController {
 
         ])
         
+        NSLayoutConstraint.activate([
+            hourlyForecastLabel.topAnchor.constraint(equalTo: containerVertical.bottomAnchor,constant: 24),
+            hourlyForecastLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,constant: 35),
+            hourlyForecastLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor,constant: -35),
+            hourlyForecastLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+
+        ])
+        
+        NSLayoutConstraint.activate([
+            hourlyCollctionView.topAnchor.constraint(equalTo: hourlyForecastLabel.bottomAnchor,constant: 24),
+            hourlyCollctionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            hourlyCollctionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+            hourlyCollctionView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            hourlyCollctionView.heightAnchor.constraint(equalToConstant: 84)
+
+        ])
+        
         
     }
 
+}
+
+extension ViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HourlyForecastCollectionViewCell.identifier, for:  indexPath)
+        
+        return cell
+    }
 }
 

@@ -20,6 +20,20 @@ class StacksViews {
         return stackView
     }()
     
+    lazy var collectionVertical: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 4
+        stackView.layer.borderWidth = 1
+        stackView.layer.borderColor = CGColor(gray: 1, alpha: 1)
+        stackView.backgroundColor = .clear
+        stackView.layer.cornerRadius = 20
+        stackView.isLayoutMarginsRelativeArrangement = true
+        stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        return stackView
+    }()
+    
     lazy var humidityStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .horizontal
