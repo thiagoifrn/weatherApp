@@ -23,6 +23,8 @@
 		66A5FA562AF0C540008DC174 /* HourlyForecastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA552AF0C540008DC174 /* HourlyForecastCollectionViewCell.swift */; };
 		66A5FA582AF0D564008DC174 /* DailyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA572AF0D564008DC174 /* DailyForecastTableViewCell.swift */; };
 		66A5FA5A2AF0DC46008DC174 /* UIView+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA592AF0DC46008DC174 /* UIView+extensions.swift */; };
+		66A5FA5C2AF0E003008DC174 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA5B2AF0E003008DC174 /* Service.swift */; };
+		66A5FA5E2AF0E693008DC174 /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A5FA5D2AF0E693008DC174 /* ForecastResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		66A5FA552AF0C540008DC174 /* HourlyForecastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastCollectionViewCell.swift; sourceTree = "<group>"; };
 		66A5FA572AF0D564008DC174 /* DailyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCell.swift; sourceTree = "<group>"; };
 		66A5FA592AF0DC46008DC174 /* UIView+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extensions.swift"; sourceTree = "<group>"; };
+		66A5FA5B2AF0E003008DC174 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		66A5FA5D2AF0E693008DC174 /* ForecastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +121,9 @@
 				66A5FA1A2AF0880A008DC174 /* AppDelegate.swift */,
 				66A5FA1C2AF0880A008DC174 /* SceneDelegate.swift */,
 				66A5FA1E2AF0880A008DC174 /* ViewController.swift */,
+				66A5FA5D2AF0E693008DC174 /* ForecastResponse.swift */,
 				66A5FA572AF0D564008DC174 /* DailyForecastTableViewCell.swift */,
+				66A5FA5B2AF0E003008DC174 /* Service.swift */,
 				66A5FA592AF0DC46008DC174 /* UIView+extensions.swift */,
 				66A5FA552AF0C540008DC174 /* HourlyForecastCollectionViewCell.swift */,
 				66A5FA232AF0880B008DC174 /* Assets.xcassets */,
@@ -289,8 +295,10 @@
 				66A5FA5A2AF0DC46008DC174 /* UIView+extensions.swift in Sources */,
 				66A5FA4E2AF0A217008DC174 /* HeaderView.swift in Sources */,
 				66A5FA1F2AF0880A008DC174 /* ViewController.swift in Sources */,
+				66A5FA5E2AF0E693008DC174 /* ForecastResponse.swift in Sources */,
 				66A5FA1B2AF0880A008DC174 /* AppDelegate.swift in Sources */,
 				66A5FA522AF0B4DE008DC174 /* StacksViews.swift in Sources */,
+				66A5FA5C2AF0E003008DC174 /* Service.swift in Sources */,
 				66A5FA562AF0C540008DC174 /* HourlyForecastCollectionViewCell.swift in Sources */,
 				66A5FA4C2AF09F9A008DC174 /* BackgroundView.swift in Sources */,
 				66A5FA582AF0D564008DC174 /* DailyForecastTableViewCell.swift in Sources */,

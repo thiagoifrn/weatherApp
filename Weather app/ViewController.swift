@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    private let service = Service()
+    
     lazy var hourlyCollctionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -56,6 +58,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        
+        service.fetchData(city: City(latitude: "-5.79448", longitude: "-35.211", name: "Natal")) { message in
+            print(message?.daily)
+        }
     }
     
     private func setupView () {
